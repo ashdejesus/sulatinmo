@@ -7,23 +7,26 @@ html, body {
 
 /* Navbar & Footer Background */
 .custom-navbar, .custom-footer, .top-search-bar {
-    background-color: #9b51e0;
+    background-color: #13235e;
 }
 
+.top-search-bar {
+    background-color: #f634a2;
+}
 .btn-violet {
-    background-color: violet;
+    background-color: #243471;
     color: white;
     border: none;
 }
 
 .btn-violet:hover {
-    background-color: darkviolet;
+    background-color: #243471;
     color: white;
 }
 
 
 .hero {
-    background: linear-gradient(135deg, #9b51e0, #ff6bcb);
+    background: linear-gradient(135deg, #933187, #e480d4);
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -37,7 +40,7 @@ html, body {
 
 /* Button Styling */
 .btn-light {
-    color: #9b51e0;
+    color: #243471;
     font-weight: 600;
 }
 

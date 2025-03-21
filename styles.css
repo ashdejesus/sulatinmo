@@ -1,0 +1,66 @@
+/* Import Font */
+html, body {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+/* Navbar & Footer Background */
+.custom-navbar, .custom-footer, .top-search-bar {
+    background-color: #9b51e0;
+}
+
+.btn-violet {
+    background-color: violet;
+    color: white;
+    border: none;
+}
+
+.btn-violet:hover {
+    background-color: darkviolet;
+    color: white;
+}
+
+
+.hero {
+    background: linear-gradient(135deg, #9b51e0, #ff6bcb);
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-weight: 600;
+    font-size: 2.8rem;
+}
+
+/* Button Styling */
+.btn-light {
+    color: #9b51e0;
+    font-weight: 600;
+}
+
+/* Info Section */
+.info-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+/* Cards */
+.card {
+    border: none;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.custom-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}

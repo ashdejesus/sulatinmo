@@ -3,96 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Women's Month</title>
+    <title>Baybayin Revival</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --dark-green: #2E3B2B;
+            --medium-green: #7A8C66;
+            --light-green: #DCE2B9;
+            --accent-green: #A3B18A;
+            --text-dark: #1F1F1F;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-green);
+            color: var(--text-dark);
+        }
+        .bg-custom {
+            background-color: var(--dark-green);
+        }
+        .custom-navbar {
+            background-color: var(--medium-green);
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: var(--accent-green) !important;
+        }
+        .custom-footer {
+            background-color: var(--dark-green);
+        }
+        h2 {
+            color: var(--dark-green);
+        }
+        h4 {
+            color: var(--medium-green);
+        }
+        .about-section, .vision-section, .mission-section {
+            background-color: var(--light-green);
+            border-radius: 10px;
+            padding: 2rem;
+        }
+    </style>
 </head>
 <body>
 
-      <!-- Top Search Bar -->
-      <div class="top-search-bar bg-custom py-2">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand text-white fw-bold" href="#">Women's Month</a>
-            <span class="fw-bold text-purple"> </span>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
-                <button class="btn btn-light" type="submit">Search</button>
-            </form>
+<!-- Top Search Bar -->
+<div class="top-search-bar bg-custom py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand text-white fw-bold" href="index.html">Baybayin</a>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+            <button class="btn btn-light" type="submit">Search</button>
+        </form>
+    </div>
+</div> 
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="history.html">History</a></li>
+            </ul>
         </div>
-    </div> 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="history.html">History</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    </div>
+</nav>
 
 <!-- About Section -->
-<section class="about-section bg-light py-5">
+<section class="about-section py-5 my-4">
     <div class="container">
-        <h2 class="text-center mb-4">Who We Are</h2>
-        <p class="text-center">Women's Month is dedicated to celebrating the achievements, resilience, and contributions of women worldwide. It serves as a reminder of the struggles for gender equality and the progress that continues to be made.</p>
-        <p class="text-center">Our organization is committed to creating a platform where women's voices are heard, their stories are shared, and their accomplishments are celebrated. We believe that by recognizing the efforts of women throughout history and in the present, we can inspire future generations to continue the fight for equality and justice.</p>
-        <p class="text-center">From grassroots movements to global initiatives, Women's Month highlights the importance of unity, collaboration, and determination in achieving a more inclusive and equitable world. Together, we can honor the legacy of women who have paved the way and empower those who are shaping the future.</p>
+        <h2 class="text-center mb-4">What is Baybayin?</h2>
+        <p class="text-center">Baybayin is an ancient pre-colonial Philippine script that nearly faded due to colonial influence. Today, it’s making a comeback through technology, education, design, and cultural advocacy—serving as a symbol of heritage and pride.</p>
+        <p class="text-center">The Baybayin revival movement aims to keep this script alive in modern life—appearing in apps, websites, school lessons, street art, and even proposed government signage.</p>
+        <p class="text-center">By blending tradition with innovation, we can ensure Baybayin thrives in the digital age while connecting Filipinos to their roots.</p>
     </div>
 </section>
- <!-- Vision Section -->
-<section class="vision-section py-5 bg-light">
+
+<!-- Vision Section -->
+<section class="vision-section py-5 my-4">
     <div class="container">
         <h2 class="text-center mb-4">Our Vision</h2>
-        <p class="text-center">Our vision is to create a world where every woman is empowered to reach her full potential, free from discrimination and inequality. We strive for a future where gender equality is not just an aspiration but a reality, and where women are celebrated for their contributions in every sphere of life.</p>
-        <p class="text-center">We envision a society where women have equal access to education, healthcare, and opportunities, and where their voices are heard and valued. By fostering a culture of respect, inclusivity, and collaboration, we aim to build a brighter and more equitable future for all.</p>
-        <p class="text-center">Through our efforts, we hope to inspire individuals and communities to take action, challenge stereotypes, and break down barriers. Together, we can create a legacy of empowerment and equality that will benefit generations to come.</p>
+        <p class="text-center">To make Baybayin an everyday part of Filipino life once more—recognized, respected, and used by people of all generations.</p>
+        <p class="text-center">We envision schools, businesses, and communities embracing Baybayin as both an art form and a communication tool, promoting cultural pride and unity.</p>
+        <p class="text-center">Through creative integration into fashion, tech, and public spaces, Baybayin will not only survive but flourish.</p>
     </div>
 </section>
+
 <!-- Mission Section -->
-<section class="mission-section py-5 bg-light">
+<section class="mission-section py-5 my-4">
     <div class="container">
         <h2 class="text-center mb-4">Our Mission</h2>
-        <p class="text-center">Our mission is to honor and uplift women by spreading awareness, advocating for gender equality, and fostering a community that supports women in all aspects of life.</p>
-        <p class="text-center">We aim to create opportunities for women to thrive, whether in education, the workplace, or their personal lives. By addressing systemic barriers and promoting inclusivity, we strive to build a society where every woman can reach her full potential.</p>
-        <p class="text-center">Through events, campaigns, and educational programs, we seek to inspire action and drive meaningful change. Our mission is not just about celebrating achievements but also about addressing the challenges that women continue to face today.</p>
+        <p class="text-center">To preserve, teach, and innovate Baybayin through accessible resources, awareness campaigns, and digital tools.</p>
+        <p class="text-center">We connect artists, educators, developers, and advocates to create modern applications for this ancient script.</p>
+        <p class="text-center">By embracing both tradition and technology, we aim to inspire a new generation to value and use Baybayin every day.</p>
 
         <div class="row mt-4 text-center">
             <div class="col-md-4">
-                <h4>Empower</h4>
-                <p>Encouraging women to pursue their dreams and break barriers. We believe in providing resources, mentorship, and support to help women achieve their goals and overcome obstacles.</p>
+                <h4>Preserve</h4>
+                <p>Safeguarding the script by documenting, teaching, and embedding it in local and global platforms.</p>
             </div>
             <div class="col-md-4">
-                <h4>Educate</h4>
-                <p>Spreading knowledge about gender equality and women's rights. Education is the foundation for change, and we are committed to raising awareness about the issues that impact women globally.</p>
+                <h4>Promote</h4>
+                <p>Encouraging its use in design, branding, signage, and online content to keep it visible and relevant.</p>
             </div>
             <div class="col-md-4">
-                <h4>Inspire</h4>
-                <p>Showcasing stories of strong women who have made an impact. By sharing these stories, we hope to motivate others to take action and contribute to the ongoing fight for equality.</p>
+                <h4>Innovate</h4>
+                <p>Leveraging mobile apps, websites, and typefaces to bring Baybayin into everyday communication.</p>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Footer -->
+<footer class="custom-footer text-white py-3 mt-4">
+    <div class="container d-flex justify-content-between align-items-center">
+        <span class="fw-bold">Baybayin Revival</span>
+        <p class="mb-0">&copy; 2025 Baybayin. All rights reserved.</p>
+    </div>
+</footer>
 
-
-    <!-- Footer -->
-    <footer class="custom-footer text-white py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <span class="fw-bold">Women's Month</span>
-            <p class="mb-0">&copy; 2025 Women's Month. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

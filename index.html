@@ -65,7 +65,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="interactive.html">Interactive</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="history.html">History</a></li>
                 </ul>
@@ -83,62 +83,224 @@
         </div>
     </section>
 
-    <!-- Info Section -->
-    <section class="info-section py-5" data-aos="fade-up">
-        <div class="container text-center">
-            <h2 class="mb-4">How We’re Keeping Baybayin Alive</h2>
-            <div class="row mt-4">
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <h5 class="card-title">Digital Technologies</h5>
-                            <p class="card-text">Mobile apps, websites, and typefaces make Baybayin accessible to everyone.</p>
-                            <a href="#" class="btn btn-custom">Explore Tools</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <h5 class="card-title">Education</h5>
-                            <p class="card-text">Integrating Baybayin into Filipino subjects to teach the next generation.</p>
-                            <a href="#" class="btn btn-custom">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <h5 class="card-title">Design & Fashion</h5>
-                            <p class="card-text">From t-shirts to logos, Baybayin is becoming part of everyday style.</p>
-                            <a href="#" class="btn btn-custom">See Designs</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
-    <!-- Government Efforts Section -->
-    <section class="py-5" style="background-color: #F3F5E4;" data-aos="fade-up">
-        <div class="container">
-            <h2 class="text-center mb-4">Government Efforts to Promote Baybayin</h2>
-            <p>
-                In recent years, several bills have been proposed in the Philippine Congress advocating for the inclusion 
-                of Baybayin in official government communication and public signage. These include:
-            </p>
-            <ul>
-                <li><strong>House Bill No. 1022</strong> – National Writing System Act, mandating Baybayin in government signage, labels, and documents.</li>
-                <li><strong>Senate Bill No. 1899</strong> – Baybayin Act of 2013, proposing official integration in government logos.</li>
-                <li><strong>Senate Bill No. 2086</strong> – Promotion of Baybayin for cultural preservation and education.</li>
-                <li><strong>House Bill No. 4155</strong> – Preservation of indigenous writing systems, particularly Baybayin.</li>
-            </ul>
-            <p>
-                These legislative efforts reflect a growing institutional recognition of Baybayin as both a cultural 
-                treasure and a living part of modern Filipino identity.
-            </p>
+ <!-- About Baybayin Section -->
+<section class="py-5" style="background-color: #F3F5E4;" data-aos="fade-up">
+    <div class="container">
+        <h2 class="text-center mb-4">What is Baybayin?</h2>
+        <p>
+            Baybayin is a pre-colonial writing system used by early Filipinos before Spanish colonization. 
+            It belongs to the Brahmic family of scripts and was primarily used for poetry, personal letters, and official communication.
+            Written from left to right, Baybayin is composed of 17 basic characters that represent syllables rather than individual letters.
+        </p>
+        <p>
+            While it declined in use during the colonial period, Baybayin has never truly disappeared. 
+            Today, it is experiencing a revival through art, fashion, education, and digital platforms, serving as a bridge 
+            between modern Filipino culture and its deep historical roots.
+        </p>
+
         </div>
-    </section>
+    </div>
+</section>
+
+<style>
+.scroll-cards {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  scrollbar-width: thin;
+}
+.scroll-cards::-webkit-scrollbar {
+  height: 8px;
+}
+.scroll-cards::-webkit-scrollbar-thumb {
+  background: #7A8C66;
+  border-radius: 4px;
+}
+.scroll-card {
+  min-width: 250px;
+  flex: 0 0 auto;
+}
+.scroll-card img {
+  height: 180px;
+  object-fit: cover;
+}
+</style>
+
+<!-- Intro Text -->
+<div class="py-5 text-center" style="background-color: #F3F5E4;" data-aos="fade-up" data-aos-duration="800">
+  <h3 class="fw-bold mb-3" style="font-size: 2rem; border-bottom: 3px solid #A3B18A; display: inline-block; padding-bottom: 5px;">
+    Baybayin is being preserved and promoted through:
+  </h3>
+</div>
+
+ 
+<!-- Digital Technologies -->
+<section class="py-5" style="background-color: #F3F5E4;">
+  <div class="container" data-aos="fade-up">
+    <h2 class="fw-bold mb-3">Digital Technologies</h2>
+    <p class="text-muted mb-4">Mobile apps, websites, and typefaces making Baybayin accessible to everyone.</p>
+    
+    <div class="scroll-cards d-flex gap-3 overflow-auto pb-2">
+      
+      <!-- Baybayin App Card with Link -->
+      <a href="https://baybay-release-web-app.pages.dev/" target="_blank" class="text-decoration-none text-dark">
+        <div class="card scroll-card shadow-sm border-0 h-100 card-hover">
+          <img src="https://ccwuktwfqivhoesqyimj.supabase.co/storage/v1/object/public/gallery/baybay-app.png" 
+               class="card-img-top" alt="Baybayin app" loading="lazy">
+          <div class="card-body">
+            <p class="card-text">Baybayin learning app UI</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Baybayin Font Card -->
+      <div class="card scroll-card shadow-sm border-0 h-100 card-hover">
+        <img src="https://ccwuktwfqivhoesqyimj.supabase.co/storage/v1/object/public/gallery/custom.jpg" 
+             class="card-img-top" alt="Baybayin font" loading="lazy">
+        <div class="card-body">
+          <p class="card-text">Custom Baybayin font design</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Education -->
+<section class="py-5" style="background-color: #DCE2B9;">
+  <div class="container" data-aos="fade-up">
+    <h2 class="fw-bold mb-3">Education</h2>
+    <p class="text-muted mb-4">Integrating Baybayin into Filipino and Araling Panlipunan subjects for the next generation.</p>
+    
+    <div class="scroll-cards d-flex gap-3 overflow-auto pb-2">
+      <div class="card scroll-card shadow-sm border-0 h-100 card-hover">
+        <img src="https://ccwuktwfqivhoesqyimj.supabase.co/storage/v1/object/public/gallery/class.webp" 
+             class="card-img-top" alt="Baybayin class" loading="lazy">
+        <div class="card-body">
+          <p class="card-text">Baybayin lessons in class</p>
+        </div>
+      </div>
+      <div class="card scroll-card shadow-sm border-0 h-100 card-hover">
+        <img src="https://ccwuktwfqivhoesqyimj.supabase.co/storage/v1/object/public/gallery/writing.png" 
+             class="card-img-top" alt="Students learning" loading="lazy">
+        <div class="card-body">
+          <p class="card-text">Hands-on Baybayin writing</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Design & Fashion -->
+<section class="py-5" style="background-color: #F3F5E4;">
+  <div class="container" data-aos="fade-up">
+    <h2 class="fw-bold mb-3">Design & Fashion</h2>
+    <p class="text-muted mb-4">From t-shirts to tattoos, Baybayin is making a bold style statement.</p>
+    
+    <div class="scroll-cards d-flex gap-3 overflow-auto pb-2">
+      
+      <!-- Baybayin Shirt Card with Link -->
+      <a href="https://www.wearlegazy.com/?srsltid=AfmBOoqCCe1cPM4_h0DOiCFWrZtSEbUajhcNYaOHO7onf7RD-i7zniEo" 
+         target="_blank" class="text-decoration-none text-dark">
+        <div class="card scroll-card shadow-sm border-0 h-100 card-hover">
+          <img src="https://ccwuktwfqivhoesqyimj.supabase.co/storage/v1/object/public/gallery/Sandig_-_Header_Main_Menu.webp" 
+               class="card-img-top" alt="Baybayin shirt" loading="lazy">
+          <div class="card-body">
+            <p class="card-text">Streetwear with Baybayin prints</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Baybayin Tattoo Card -->
+      <div class="card scroll-card shadow-sm border-0 h-100 card-hover">
+        <img src="https://ccwuktwfqivhoesqyimj.supabase.co/storage/v1/object/public/gallery/baybayin-tattoo-ideas-1705153755.jpg" 
+             class="card-img-top" alt="Baybayin tattoo" loading="lazy">
+        <div class="card-body">
+          <p class="card-text">Baybayin ink designs</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Government Efforts -->
+<section class="py-5" style="background-color: #DCE2B9;">
+  <div class="container" data-aos="fade-up">
+    <h2 class="fw-bold mb-3">Government Efforts</h2>
+    <p class="text-muted mb-4">Bills pushing for Baybayin in official communications and public signage.</p>
+    
+    <div class="scroll-cards d-flex gap-3 overflow-auto pb-2">
+      <div class="card scroll-card shadow-sm border-0 h-100 card-hover">
+        <img src="https://ccwuktwfqivhoesqyimj.supabase.co/storage/v1/object/public/gallery/signage.jpg" 
+             class="card-img-top" alt="Baybayin signage" loading="lazy">
+        <div class="card-body">
+          <p class="card-text">Government signage in Baybayin</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Social Media -->
+<section class="py-5" style="background-color: #F3F5E4;">
+  <div class="container" data-aos="fade-up">
+    <h2 class="fw-bold mb-3">Social Media</h2>
+    <p class="text-muted mb-4">Online campaigns teaching how to read and write Baybayin.</p>
+    
+    <div class="scroll-cards d-flex gap-3 overflow-auto pb-2">
+      
+      <!-- Instagram Embed -->
+      <div class="card scroll-card shadow-sm border-0 card-hover">
+        <div class="card-body">
+          <blockquote class="instagram-media" 
+                      data-instgrm-permalink="https://www.instagram.com/p/DHmFr6dycIw/" 
+                      data-instgrm-version="14">
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- YouTube Embed -->
+      <div class="card scroll-card shadow-sm border-0 card-hover">
+        <iframe width="100%" height="315"
+          src="https://www.youtube.com/embed/oLwj1ZYw3vA"
+          title="3 EASY STEPS TO LEARN BAYBAYIN (TUTORIAL BY ANAKNIRIZAL)"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <div class="card-body">
+          <p class="card-text">Baybayin writing tutorial video</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Styles -->
+<style>
+  .scroll-cards {
+    scroll-snap-type: x mandatory;
+  }
+  .scroll-card {
+    min-width: 280px;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+</style>
+
+<!-- Instagram Embed Script -->
+<script async src="//www.instagram.com/embed.js"></script>
+
+
+
 
     <!-- Footer -->
     <footer class="custom-footer text-white py-3" data-aos="fade-up">
